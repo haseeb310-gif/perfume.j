@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>J.</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+  <style>
+
+
+
+    .products {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card img {
+      height: 230px;
+      object-fit: contain;
+    }
+
+    .price {
+      color: #087f5b;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 35px 0 15px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+      font-size: 22px;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold fs-3" href="index.html">J.</a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="index2.html">Men</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="index3.html">Women</a>
+        </li>
+      </ul>
+
+      <button class="btn btn-outline-dark"
+        data-bs-toggle="offcanvas" data-bs-target="#cart">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart <span id="count" class="badge bg-danger">0</span>
+
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+<!-- PRODUCTS -->
+
+<div class="container products py-5">
+
+  <div class="text-center mb-4">
+    <h2>Our Perfumes</h2>
+    <p class="text-muted">Find your favourite fragrance</p>
+  </div>
+
+  <div class="row justify-content-center g-4">
+
+
+    <!-- PRODUCT 1 -->
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+
+        <img src="c:\Users\Default.DESKTOP-AVB3NHO\Downloads\J. PERFUMES\Alrounder-ShoaibMalik_3.webp"
+             class="card-img-top">
+
+        <div class="card-body text-center">
+          <h5>Allrounder</h5>
+          <p class="text-muted">Shoaib Malik</p>
+          <p class="price">Rs. 3,499</p>
+
+          <button class="btn btn-dark w-100"
+            onclick="add('Allrounder',3499)">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- PRODUCT 2 -->
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+
+        <img src="c:\Users\Default.DESKTOP-AVB3NHO\Downloads\J. PERFUMES\janan_gold_body_spray_2_b230f320-b0fa-4315-80d1-49d6cb4c3bba.webp"
+             class="card-img-top">
+
+        <div class="card-body text-center">
+          <h5>Janan Gold</h5>
+          <p class="text-muted">Body Spray</p>
+          <p class="price">Rs. 1,999</p>
+
+          <button class="btn btn-dark w-100"
+            onclick="add('Janan Gold',1999)">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- PRODUCT 3 -->
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+
+        <img src="c:\Users\Default.DESKTOP-AVB3NHO\Downloads\J. PERFUMES\khumaar_2_e9265c88-33a9-4071-8468-8327770360e0.webp"
+             class="card-img-top">
+
+        <div class="card-body text-center">
+          <h5>Khumaar</h5>
+          <p class="text-muted">Perfume</p>
+          <p class="price">Rs. 3,999</p>
+
+          <button class="btn btn-dark w-100"
+            onclick="add('Khumaar',3999)">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- PRODUCT 4 -->
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+
+        <img src="c:\Users\Default.DESKTOP-AVB3NHO\Downloads\J. PERFUMES\mika-side.webp"
+             class="card-img-top">
+
+        <div class="card-body text-center">
+          <h5>Mika</h5>
+          <p class="text-muted">Perfume</p>
+          <p class="price">Rs. 3,499</p>
+
+          <button class="btn btn-dark w-100"
+            onclick="add('Mika',3499)">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- PRODUCT 5 -->
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+
+        <img src="c:\Users\Default.DESKTOP-AVB3NHO\Downloads\J. PERFUMES\edge2_1.webp"
+             class="card-img-top">
+
+        <div class="card-body text-center">
+          <h5>Edge</h5>
+          <p class="text-muted">Perfume</p>
+          <p class="price">Rs. 2,999</p>
+
+          <button class="btn btn-dark w-100"
+            onclick="add('Edge',2999)">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- PRODUCT 6 -->
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+
+        <img src="c:\Users\Default.DESKTOP-AVB3NHO\Downloads\J. PERFUMES\addicted_2__1_9ddf264c-7891-4ad0-9930-a6889e6da998.webp"
+             class="card-img-top">
+
+        <div class="card-body text-center">
+          <h5>Addicted</h5>
+          <p class="text-muted">Perfume</p>
+          <p class="price">Rs. 3,499</p>
+
+          <button class="btn btn-dark w-100"
+            onclick="add('Addicted',3499)">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- PRODUCT 7 -->
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+
+        <img src="c:\Users\Default.DESKTOP-AVB3NHO\Downloads\J. PERFUMES\CLASSIQUEPOURFEMME_1.webp"
+             class="card-img-top">
+
+        <div class="card-body text-center">
+          <h5>Classique Pour Femme</h5>
+          <p class="text-muted">Perfume</p>
+          <p class="price">Rs. 3,999</p>
+
+          <button class="btn btn-dark w-100"
+            onclick="add('Classique Pour Femme',3999)">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- PRODUCT 8 -->
+
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+
+        <img src="c:\Users\Default.DESKTOP-AVB3NHO\Downloads\J. PERFUMES\uroosa_2__1_0c5c35b3-ef68-4071-8734-0439e2cd0e81.webp"
+             class="card-img-top">
+
+        <div class="card-body text-center">
+          <h5>Uroosa</h5>
+          <p class="text-muted">Perfume</p>
+          <p class="price">Rs. 3,499</p>
+
+          <button class="btn btn-dark w-100"
+            onclick="add('Uroosa',3499)">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- CART -->
+
+<div class="offcanvas offcanvas-end" id="cart">
+
+  <div class="offcanvas-header">
+    <h5><i class="fa-solid fa-cart-shopping"></i> Your Cart</h5>
+
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+
+    <div id="cartItems">
+      <p class="text-muted">Your cart is empty.</p>
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-between">
+      <b>Total:</b>
+      <b id="total">Rs. 0</b>
+    </div>
+
+    <button class="btn btn-dark w-100 mt-3"
+      onclick="checkout()">
+      Checkout
+    </button>
+
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-4 mb-3">
+        <h2>J.</h2>
+        <p>Quality perfumes for every moment.</p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5>Contact Us</h5>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +92 300 1234567
+        </p>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Karachi, Pakistan
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5>Follow Us</h5>
+
+        <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <p class="text-center mb-0">
+       2026 J. Perfumes
+    </p>
+
+  </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+let cart = [];
+
+function add(name, price) {
+
+  let item = cart.find(x => x.name == name);
+
+  if (item)
+    item.qty++;
+  else
+    cart.push({name, price, qty:1});
+
+  showCart();
+}
+
+
+function showCart() {
+
+  let box = document.getElementById("cartItems");
+  let total = 0;
+  let count = 0;
+
+  box.innerHTML = "";
+
+  cart.forEach((item, i) => {
+
+    total += item.price * item.qty;
+    count += item.qty;
+
+    box.innerHTML += `
+      <div class="d-flex justify-content-between mb-3">
+        <div>
+          <b>${item.name}</b><br>
+          Rs. ${item.price.toLocaleString()}
+          <br>
+
+          <button class="btn btn-sm btn-light"
+            onclick="change(${i},-1)">−</button>
+
+          ${item.qty}
+
+          <button class="btn btn-sm btn-light"
+            onclick="change(${i},1)">+</button>
+        </div>
+
+        <button class="btn btn-sm btn-danger"
+          onclick="removeItem(${i})">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+    `;
+  });
+
+  if (!cart.length)
+    box.innerHTML = '<p class="text-muted">Your cart is empty.</p>';
+
+  document.getElementById("total").innerText =
+    "Rs. " + total.toLocaleString();
+
+  document.getElementById("count").innerText = count;
+}
+
+
+function change(i, amount) {
+
+  cart[i].qty += amount;
+
+  if (cart[i].qty <= 0)
+    cart.splice(i,1);
+
+  showCart();
+}
+
+
+function removeItem(i) {
+
+  cart.splice(i,1);
+  showCart();
+}
+
+
+function checkout() {
+
+  if (!cart.length) {
+    alert("Your cart is empty!");
+    return;
+  }
+  alert("Thank you for shopping with J.!");
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
